@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: 'JetBrains Mono';
+
+    overflow: visible;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth
+}
+ 
+main {
+    height: auto;
+}
+
+.fstlayer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 15px 0;
+
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+#hypr, #infinix, #projects {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    position: relative;
+
+    text-shadow: 0 0 10px white;
+}
+
+.link::after {
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: white;
+	content: "";
+	transition: all 0.3s ease-out;
+    
+    box-shadow: 0 0 10px white;
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%;
+}
+
+.header_name {
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
+}
+
+
+
+.greetings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 110px;
+}
+
+.cat {
+    height: 120px;
+    width: auto;
+
+    margin-right: 30px;
+    pointer-events: none;
+
+    animation: cat-scale 6s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes cat-scale {
+    from {
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleY(1.06);
+        transform: scaleX(1.02);
+    }
+
+    to {
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+}
+
+.hello-world {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-hw {
+    font-size: 20px;
+}
+
+.links-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.link-2 {
+    height: 35px;
+    width: 35px;
+
+    margin-top: 10px;
+    
+    background-size: cover;
+
+    transition: all 0.3s ease   ;
+}
+
+.link-2:hover {
+    transform: translateY(-5px);
+}
+
+#github {
+    background-image: url(../resources/links/icons8-github.svg);
+}
+
+#telegram {
+    background-image: url(../resources/links/icons8-telegram.svg);
+}
+
+#discord {
+    background-image: url(../resources/links/icons8-discord.svg);
+}
+
+#steam {
+    background-image: url(../resources/links/icons8-steam.svg);
+}
+
+
+
+.projects {
+    height: 100vh;
+}
