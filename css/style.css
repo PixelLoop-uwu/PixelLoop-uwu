@@ -163,7 +163,62 @@ a:focus:after {
 }
 
 
+.burger-button {
+    display: none;
 
-.projects {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-shadow: 0 0 10px white;
+    font-size: 30px;
+}
+
+.burger-button:active {
+    transform: scale(0.90);
+}
+
+
+
+
+/* .projects {
     height: 100vh;
+} */
+
+
+@media(max-width: 1000px)  {
+    .burger-button {
+        display: inline;
+        z-index: 1000;
+    }
+
+    .links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: auto;
+        height: 100%;
+        background-color: #00000078;
+        color: #fff;
+
+        flex-direction: column;
+
+        padding-top: 70px;
+        padding-left: 20px;
+        padding-right: 10px;
+
+        z-index: 10;
+
+    }
+
+    .links.open { left: 0; }
+    .links.close { left: -50%; }
+
+    .header_name {
+        display: none;
+    }
+
+    .header {
+        justify-content: start;
+        margin: 0 20px;
+    }
 }
