@@ -15,6 +15,17 @@ main {
     height: auto;
 }
 
+
+#hypr, #infinix, #Infinix-Minecraft, #Infinix-Launcher, #Hyprland-Dotfiles {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#Website-About-Me {
+    display: none;
+}
+
+
 .fstlayer {
     height: 100vh;
     display: flex;
@@ -34,11 +45,6 @@ main {
 .links {
     display: flex;
     gap: 30px;
-}
-
-#hypr, #infinix, #projects {
-    pointer-events: none;
-    opacity: 0.5;
 }
 
 .link {
@@ -65,8 +71,7 @@ main {
     box-shadow: 0 0 10px white;
 }
 
-a:hover:after,
-a:focus:after {
+.link:focus::after {
 	width: 100%;
 }
 
@@ -142,10 +147,6 @@ a:focus:after {
     transition: all 0.3s ease   ;
 }
 
-.link-2:hover {
-    transform: translateY(-5px);
-}
-
 #github {
     background-image: url(../resources/links/icons8-github.svg);
 }
@@ -163,8 +164,10 @@ a:focus:after {
 }
 
 
+
 .burger-button {
     display: none;
+    position: fixed;
 
     background-color: transparent;
     border: none;
@@ -176,14 +179,6 @@ a:focus:after {
 .burger-button:active {
     transform: scale(0.90);
 }
-
-
-
-
-/* .projects {
-    height: 100vh;
-} */
-
 
 @media(max-width: 1000px)  {
     .burger-button {
@@ -221,4 +216,104 @@ a:focus:after {
         justify-content: start;
         margin: 0 20px;
     }
+}
+
+
+.projects-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.projects {
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding: 30px 150px;
+    gap: 30px;
+}
+
+.project {
+    height: 400px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+}
+
+
+
+.project-img {
+    height: 150px;
+    width: 300px;
+
+    border-radius: 15px;
+    
+}
+
+.project-description, .project-title {
+    padding: 0px 15px;
+}
+
+.project-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project-sub-title {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.project-description {
+    text-align: center;
+}
+
+.project-details {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    justify-self: end;
+    margin: 10px;
+
+}
+
+
+
+
+
+
+
+
+@media (hover: hover) and (pointer: fine) {
+    .project-details:hover {
+        opacity: 0.6;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+    }
+
+    .link-2:hover {
+        transform: translateY(-5px);
+    }
+
+    .link:hover::after {
+        width: 100%;
+    }
+
 }
