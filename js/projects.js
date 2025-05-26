@@ -2,7 +2,7 @@ const container = document.getElementById('projects-container');
 
 const ProjectsList = [
   {
-    title: "Infinix-Minecraft",
+    title: "HyperBox-Minecraft",
 
     banner: "resources/projects/infinix.png",
     sub_title: "Когда-нибудь, возможно...",
@@ -11,7 +11,7 @@ const ProjectsList = [
   },
 
   {
-    title: "Infinix-Launcher",
+    title: "HyperBox-Launcher",
 
     banner: "resources/projects/infinix.png",
     sub_title: "Разрабатывается...",
