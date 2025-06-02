@@ -16,7 +16,7 @@ main {
 }
 
 
-#hypr, #infinix, #Infinix-Minecraft, #Infinix-Launcher, #Hyprland-Dotfiles {
+#hypr, #infinix, #Hyprland-Dotfiles, #HyperBox-Minecraft, #HyperBox-Launcher {
     pointer-events: none;
     opacity: 0.5;
 }
