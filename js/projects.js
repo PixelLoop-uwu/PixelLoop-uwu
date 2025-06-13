@@ -51,7 +51,7 @@ ProjectsList.forEach(project => {
     <div class="project-title">${project.title}</div>
     <div class="project-description">${project.description}</div>
 
-    <a href="${project.link}" class="project-details" id="${project.title}">Подробнее -→</a>
+    <a href="${project.link}" class="project-details" id="${project.title}">Подробнее →</a>
   `;
 
   container.appendChild(item);
