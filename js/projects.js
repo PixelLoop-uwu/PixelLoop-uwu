@@ -6,35 +6,39 @@ const ProjectsList = [
 
     banner: "resources/projects/infinix.png",
     sub_title: "Когда-нибудь, возможно...",
-    description: "Модовый сервер майнкрафт, основанный на таких моддификациях как: Create, Botania, Ars Nouveau",
-    link: ""
+    description: "Полуприватный майнкрафт сервер без приватов, без гриферства, моды",
+    link: "",
+    details: false
   },
 
-  {
-    title: "HyperBox-Launcher",
+  // {
+  //   title: "HyperBox-Launcher",
 
-    banner: "resources/projects/infinix.png",
-    sub_title: "Разрабатывается...",
-    description: "Лаунчер проекта. Авторизация, автоматическая установка модов, проверка целостности файлов",
-    link: ""
-  },
+  //   banner: "resources/projects/infinix.png",
+  //   sub_title: "Когда-нибудь, возможно...",
+  //   description: "Лаунчер проекта. Авторизация, установка модов, проверка целостности файлов",
+  //   link: "",
+  //   details: false
+  // },
 
   {
     title: "Hyprland-Dotfiles",
 
     banner: "resources/projects/hyprland.png",
     sub_title: "Когда-нибудь, возможно...",
-    description: "Минималистичный конфиг Hyprland (Arch Linux) в зелёных тонах (Мой)",
-    link: ""
+    description: "Конфиги моей системы ArchLinux, окружение Hyprland",
+    link: "",
+    details: false
   },
 
   {
-    title: "Website-About-Me",
+    title: "This-Website",
 
     banner: "resources/projects/THIS.png",
-    sub_title: "Ещё разрабатывается...",
+    sub_title: "Пока не готов...",
     description: "Собственно, этот сайт. И мои первые более-менее успешные попытки взаимодействия с JavaScript",
-    link: ""
+    link: "",
+    details: false
   },
 ]
 
@@ -51,7 +55,7 @@ ProjectsList.forEach(project => {
     <div class="project-title">${project.title}</div>
     <div class="project-description">${project.description}</div>
 
-    <a href="${project.link}" class="project-details" id="${project.title}">Подробнее →</a>
+    ${project.details ? `<a href="${project.link}" class="project-details"">Подробнее →</a>` : ''}
   `;
 
   container.appendChild(item);
