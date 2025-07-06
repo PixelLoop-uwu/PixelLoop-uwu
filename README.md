@@ -1,6 +1,6 @@
 
 <div align="center" >
-  <img src="./resources/cat.png" height=100>
+  <img src="./resources/cat.png" width=200>
 </div>
 
 <h2 align="center">Hi there, I'm Katsuro (or Pixel_Loop)</h2>
@@ -10,12 +10,12 @@
    <img 
       src="https://github-readme-stats.vercel.app/api?username=PixelLoop-dev&show_icons=true&border_color=30363d&bg_color=0d1117&text_color=eef2ff&title_color=818cf8&count_private=true&border_radius=4" 
       alt="GitHub Account Stats"
-      height="160"
+      width=400
     />
   <img 
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=PixelLoop-dev&layout=compact&border_color=30363d&bg_color=0d1117&text_color=eef2ff&title_color=818cf8&border_radius=4"
       alt="GitHub Top Langs Stats"
-      height="160"
+      width=358
       />
 </div>
 
