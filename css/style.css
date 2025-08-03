@@ -19,7 +19,7 @@ main {
     background-color: rgba(129, 129, 129, 0.477);
 }
 
-#hypr, #hyperbox, #Hyprland-Dotfiles {
+#hypr, #hyperbox {
     pointer-events: none;
     opacity: 0.5;
 }
@@ -369,3 +369,4 @@ footer {
     }
 
 }
+
