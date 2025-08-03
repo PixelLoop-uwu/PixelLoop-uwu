@@ -5,10 +5,10 @@ const ProjectsList = [
     title: "HyperBox-Minecraft",
 
     banner: "resources/projects/infinix.png",
-    sub_title: "Когда-нибудь, возможно...",
+    sub_title: "",
     description: "Полуприватный майнкрафт сервер без приватов, без гриферства, моды",
-    link: "",
-    details: false
+    link: "https://github.com/PixelLoop-dev/hyprland-dotfiles",
+    details: true
   },
 
   // {
