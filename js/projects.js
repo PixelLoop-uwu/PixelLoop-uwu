@@ -6,8 +6,8 @@ const ProjectsList = [
 
     banner: "resources/projects/infinix.png",
     sub_title: "",
-    description: "Полуприватный майнкрафт сервер без приватов, без гриферства, моды",
-    link: "https://github.com/PixelLoop-dev/hyprland-dotfiles",
+    description: "Полуприватный майнкрафт сервер без приватов, гриферства",
+    link: "",
     details: true
   },
 
@@ -27,7 +27,7 @@ const ProjectsList = [
     banner: "resources/projects/hyprland.png",
     sub_title: "Когда-нибудь, возможно...",
     description: "Конфиги моей системы ArchLinux, окружение Hyprland",
-    link: "",
+    link: "https://github.com/PixelLoop-dev/hyprland-dotfiles",
     details: false
   },
 
@@ -35,7 +35,7 @@ const ProjectsList = [
     title: "This-Website",
 
     banner: "resources/projects/THIS.png",
-    sub_title: "Пока не готов...",
+    sub_title: "",
     description: "Собственно, этот сайт. И мои первые более-менее успешные попытки взаимодействия с JavaScript",
     link: "",
     details: false
