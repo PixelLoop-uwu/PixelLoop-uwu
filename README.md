@@ -1,5 +1,7 @@
+### ✨ Бухфлип:
+<img src="https://cdn.7tv.app/emote/01J4PE2RKG0004SVBK6PNC37T6/4x.gif">
 
-<div align="center" >
+<!-- <div align="center" >
   <img src="./resources/cat.png" width=200>
 </div>
 
@@ -20,4 +22,4 @@
 </div>
 
 
-<p align="center"><i>Yeah, I'm soo active</i></p>
+<p align="center"><i>Yeah, I'm soo active</i></p> -->
